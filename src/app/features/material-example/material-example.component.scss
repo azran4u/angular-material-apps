@@ -92,3 +92,13 @@ mat-chip {
   flex: 1 1 auto;
 }
 
+.example-radio-group {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+}
+
+.app-mat-radio-button {
+  margin: 10px;
+}
+

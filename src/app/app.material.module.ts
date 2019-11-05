@@ -20,13 +20,56 @@ import { MatSliderModule } from '@angular/material/slider';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 @NgModule({
   imports: [
-    MatButtonModule, MatCheckboxModule, MatToolbarModule, MatChipsModule, MatOptionModule, MatGridListModule, MatProgressBarModule, MatSliderModule, MatSlideToggleModule, MatMenuModule, MatDialogModule, MatSnackBarModule, MatSelectModule, MatInputModule, MatSidenavModule, MatCardModule, MatIconModule, MatRadioModule, MatProgressSpinnerModule, MatTabsModule,MatListModule
+    MatButtonModule,
+    MatCheckboxModule,
+    MatToolbarModule,
+    MatChipsModule,
+    MatOptionModule,
+    MatGridListModule,
+    MatProgressBarModule,
+    MatSliderModule,
+    MatSlideToggleModule,
+    MatMenuModule,
+    MatDialogModule,
+    MatSnackBarModule,
+    MatSelectModule,
+    MatInputModule,
+    MatSidenavModule,
+    MatCardModule,
+    MatIconModule,
+    MatRadioModule,
+    MatProgressSpinnerModule,
+    MatTabsModule,
+    MatListModule,
+    MatTooltipModule,
   ],
   exports: [
-    MatButtonModule, MatCheckboxModule, MatToolbarModule, MatChipsModule, MatOptionModule, MatGridListModule, MatProgressBarModule, MatSliderModule, MatSlideToggleModule, MatMenuModule, MatDialogModule, MatSnackBarModule, MatSelectModule, MatInputModule, MatSidenavModule, MatCardModule, MatIconModule, MatRadioModule, MatProgressSpinnerModule, MatTabsModule, MatListModule
+    MatButtonModule,
+    MatCheckboxModule,
+    MatToolbarModule,
+    MatChipsModule,
+    MatOptionModule,
+    MatGridListModule,
+    MatProgressBarModule,
+    MatSliderModule,
+    MatSlideToggleModule,
+    MatMenuModule,
+    MatDialogModule,
+    MatSnackBarModule,
+    MatSelectModule,
+    MatInputModule,
+    MatSidenavModule,
+    MatCardModule,
+    MatIconModule,
+    MatRadioModule,
+    MatProgressSpinnerModule,
+    MatTabsModule,
+    MatListModule,
+    MatTooltipModule,
   ],
 })
-export class AppMaterialModule { }
+export class AppMaterialModule {}

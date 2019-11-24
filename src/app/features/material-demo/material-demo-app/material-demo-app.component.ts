@@ -1,13 +1,15 @@
-import { Component, Optional } from '@angular/core';
-import { MatDialog, MatDialogRef } from '@angular/material/dialog';
+import { Component } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { MatSnackBar } from '@angular/material/snack-bar';
-import { DialogContentComponent } from './dialog-content/dialog-content.component';
+import { DialogContentComponent } from '../dialog-content/dialog-content.component';
+
 @Component({
-  selector: 'app-material-example',
-  templateUrl: './material-example.component.html',
-  styleUrls: ['./material-example.component.scss'],
+  selector: 'app-material-demo-app',
+  templateUrl: './material-demo-app.component.html',
+  styleUrls: ['./material-demo-app.component.scss']
 })
-export class MaterialExampleComponent {
+export class MaterialDemoAppComponent {
+
   isDarkTheme = false;
   lastDialogResult: string;
   mode: string;
@@ -90,22 +92,3 @@ export class MaterialExampleComponent {
   }
 }
 
-// @Component({
-//   template: `
-//     <h1 matDialogTitle>This is a dialog</h1>
-//     <div matDialogContent>
-//       <mat-form-field>
-//         <label>
-//           This is a text box inside of a dialog.
-//           <input matInput #dialogInput>
-//         </label>
-//       </mat-form-field>
-//     </div>
-//     <div matDialogActions>
-//       <button mat-raised-button [matDialogClose]="dialogInput.value">CLOSE</button>
-//     </div>
-//   `,
-// })
-// export class DialogContentComponent {
-//   constructor( @Optional() public dialogRef: MatDialogRef<DialogContentComponent>) { }
-// }

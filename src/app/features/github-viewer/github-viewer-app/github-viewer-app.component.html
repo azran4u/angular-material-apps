@@ -1,0 +1,51 @@
+<mat-sidenav-container [class.m2app-dark]="isDarkTheme">
+  <mat-sidenav #sidenav mode="side" class="app-sidenav" color="primary">
+    <mat-toolbar>
+      <mat-toolbar-row>
+        <span>Settings</span>
+        <span class="app-toolbar-filler"></span>
+        <mat-icon class="example-icon">build</mat-icon>
+      </mat-toolbar-row>
+
+      <mat-toolbar-row>
+        <button
+          mat-button
+          (click)="isDarkTheme = !isDarkTheme"
+          class="app-sidebar-button"
+        >
+          TOGGLE THEME
+        </button>
+      </mat-toolbar-row>
+
+      <mat-toolbar-row>
+        <span>Account</span>
+        <span class="app-toolbar-filler"></span>
+        <mat-icon class="example-icon">account_circle</mat-icon>
+      </mat-toolbar-row>
+
+    </mat-toolbar>
+  </mat-sidenav>
+
+  <mat-toolbar color="primary">
+    <button mat-button class="app-menu-button" (click)="sidenav.toggle()">
+      <mat-icon class="example-icon">menu</mat-icon>
+    </button>
+    <span class="title">Angular Material Demo</span>
+  </mat-toolbar>
+
+  <div class="app-content">
+    <mat-card>
+      <mat-card-content>
+        <span>Content</span>
+      </mat-card-content>
+    </mat-card>
+
+    <!-- Material Fab-->
+    <button mat-fab class="app-fab">
+      <mat-icon aria-label="Example icon-button with a heart icon"
+        >favorite</mat-icon
+      >
+    </button>
+    <!-- /Material Fab-->
+  </div>
+</mat-sidenav-container>

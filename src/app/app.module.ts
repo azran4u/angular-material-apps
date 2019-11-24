@@ -5,26 +5,24 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 
-import { AppMaterialModule } from './app.material.module';
+import { SharedModule } from './shared/shared.module';
 import { AppComponent } from './app/app.component';
-import { GithubViewerComponent } from './features/github-viewer/github-viewer.component';
-import { MaterialExampleComponent } from './material-example/material-example.component';
-import { DialogContentComponent } from './material-example/dialog-content/dialog-content.component';
+import { MaterialDemoModule } from './features/material-demo/material-demo.module';
+import { GithubViewerModule } from '../app/features/github-viewer/github-viewer.module';
+import { MatTableStyleModule } from './features/mat-table-style/mat-table-style.module';
 
 @NgModule({
   imports: [
     BrowserModule,
     FormsModule,
-    AppMaterialModule,
+    SharedModule,
     BrowserAnimationsModule,
+    MaterialDemoModule,
+    GithubViewerModule,
+    MatTableStyleModule
   ],
-  declarations: [
-    AppComponent,
-    GithubViewerComponent,
-    MaterialExampleComponent,
-    DialogContentComponent,
-  ],
-  entryComponents: [DialogContentComponent],
+  declarations: [AppComponent],
+  entryComponents: [],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
